@@ -2,9 +2,46 @@
 <html>
   <head>
     <title>Pluses and Minuses</title>
+    <style>
+      #counter {
+        width: 100px; 
+        text-align: center; 
+        font-size: 100px; 
+        font-weight: 900;
+        margin: 50px auto;
+      }
+      #counter:before{
+        content:'Counter:';
+        display: block;
+        font-size: 20px;
+        font-weight: 100;
+      }
+      .buttons {
+        width: 300px;
+        margin: 10px auto;
+        text-align: center;
+      }
+      .buttons span {
+        background-color: #bfd0ff;
+        border: 1px solid #352876;
+        color: #352876;
+        cursor: pointer;
+        display: inline-block;
+        font-size: 60px;
+        font-weight: 900;
+        margin: 10px;
+        text-align: center;
+        width: 40%;
+      }
+    </style>
   </head>
 
   <body>
-    <!-- Your HTML here -->
+    <div id="counter"></div>
+    <div class="buttons">
+      <span id="plus">+</span>
+      <span id="minus">-</span>
+    </div>
+    <script src="plusesAndMinuses.js"></script>
   </body>
 </html>
